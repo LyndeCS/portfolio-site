@@ -22,6 +22,9 @@ export default {
 			backgroundImage: {
 				"navbar-bg": "url('/src/assets/bg/3.jpg')",
 			},
+			boxShadow: {
+				inner2: "inset 0 0 0 1px rgb(0 0 0 / 0.05)",
+			},
 		},
 	},
 	plugins: [],

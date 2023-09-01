@@ -13,8 +13,8 @@ const Hero = () => {
         <p className="text-xl mb-10 text-gray-400">I'm passionate about creating stylish and intuitive solutions.</p>
         <div className="container mx-auto text-center mt-6 md:mt-0">
          <div className="flex justify-center md:justify-start space-x-4">
-          <a href="#about" className="flex-grow bg-transparent border border-meadow-500 text-white py-3 px-6 rounded text-2xl transition-all duration-500 hover:flex-grow-[4]">About Me</a>
-          <a href="#portfolio" className="flex-grow bg-transparent border border-meadow-500 text-white py-3 px-6 rounded text-2xl transition-all duration-500 hover:flex-grow-[4]">See My Work</a>
+          <a href="#about" className="flex-grow bg-transparent border border-meadow-500 text-white py-3 px-6 rounded text-2xl hover:shadow-meadow-500 hover:shadow-inner2 hover:tracking-widest transition-all duration-700 hover:flex-grow-[4]">About Me</a>
+          <a href="#portfolio" className="flex-grow bg-transparent border border-meadow-500 text-white py-3 px-6 rounded text-2xl hover:shadow-meadow-500 hover:shadow-inner2 hover:tracking-widest transition-all duration-700 hover:flex-grow-[4]">See My Work</a>
          </div>
         </div>
         </div>
