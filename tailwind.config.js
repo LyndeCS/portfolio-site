@@ -5,7 +5,10 @@ export default {
 		extend: {
 			colors: {
 				smoke: {
+					100: "#2b2b36",
+					300: "#1d1d24",
 					500: "#141419",
+					700: "#0e0e12",
 				},
 				shark: {
 					300: "#3D3E43",
@@ -27,5 +30,5 @@ export default {
 			},
 		},
 	},
-	plugins: [],
+	plugins: ["prettier-plugin-tailwindcss"],
 };
