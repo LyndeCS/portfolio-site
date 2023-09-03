@@ -40,15 +40,15 @@ const About = () => {
   };
 
   return (
-    <section className="bg-smoke-500 py-20">
+    <section className="bg-shark-500 pt-32">
       <div className="container mx-auto justify-center flex rounded-xl">
         {/* Left container with vertically stacked cards */}
-        <div className="w-1/4 rounded-xl">
+        <div className="w-2/5 rounded-xl">
           {Object.keys(cardData).map((card) => (
             <div
               key={card}
-              className={`p-8 rounded-l-xl ${
-                activeCard === card ? 'bg-smoke-300 cursor-default' : 'cursor-pointer hover:bg-smoke-500'
+              className={`p-8 rounded-xl ${
+                activeCard === card ? 'bg-smoke-700 cursor-default shadow shadow-meadow-700' : 'cursor-pointer hover:bg-smoke-300'
               }`}
               onClick={() => handleCardClick(card)}
             >
@@ -64,11 +64,11 @@ const About = () => {
           ))}
         </div>
         {/* Right container with dynamic content */}
-        <div className="w-2/4 rounded-r-xl bg-smoke-300">
-            <div className="flex w-full h-full flex-col">
+        <div className="w-3/5 rounded-r-xl">
+            <div className="w-3/4 pl-24 flex h-full flex-col">
                 <div className="p-8 rounded-t-xl">
                     <div className="flex items-center pb-2">
-                        <div className="">
+                        <div className="bg-smoke-700">
                             <h2 className="text-3xl text-white pb-2">{cardData[activeCard].heading}</h2>
                             <h3 className="text-lg text-white">{cardData[activeCard].descSubheading}</h3>
                         </div>
