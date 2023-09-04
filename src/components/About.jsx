@@ -15,8 +15,8 @@ const About = () => {
     aboutMe: {
       cardHeading: 'About Me',
       cardSubheading: 'More about who I am',
-      descHeading: "Hi, I'm Christopher Lynde.",
-      descSubheading: "Thanks for stopping by.",
+      descHeading: "Hi, I'm Chris.",
+      descSubheading: "Personal Life:",
       description: "I graduated from the Web Development program at Fanshawe College in 2021. Since then I've been creating websites, apps, you name it, in order to improve my skills as a developer. When I'm not working, I like to be in the sun and stay active by playing volleyball or running. I always try to make time to hangout with friends and family, and its rare that I'm not smiling or laughing. I can't live without music, I love reading science-fiction novels, and I'm a bit of a cinephile.",
       icon: <FiSmile />,
     },
