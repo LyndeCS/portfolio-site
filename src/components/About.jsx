@@ -1,6 +1,25 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaReact, FaNode, FaHtml5, FaCss3, FaJs, FaBootstrap, FaLinux, FaPhp, FaWordpress } from 'react-icons/fa';
+import { SiMysql, SiTypescript, SiFirebase, SiMui, SiTailwindcss, SiJavascript } from 'react-icons/si';
 import headshot from '../assets/stock_selfie.png';
+
+const techIcons = [
+  { icon: <FaReact />, text: 'React' },
+  { icon: <FaNode />, text: 'Node.js' },
+  { icon: <SiJavascript />, text: 'JavaScript' },
+  { icon: <SiTypescript />, text: 'TypeScript' },
+  { icon: <FaHtml5 />, text: 'HTML5' },
+  { icon: <FaCss3 />, text: 'CSS3' },
+  { icon: <FaPhp />, text: 'PHP' },
+  { icon: <SiMysql />, text: 'MySQL' },
+  { icon: <SiFirebase />, text: 'Firebase' },
+  { icon: <SiTailwindcss />, text: 'Tailwind' },
+  { icon: <FaLinux />, text: 'Linux' },
+  { icon: <FaWordpress />, text: 'WordPress' },
+  { icon: <SiMui />, text: 'MUI' },
+  { icon: <FaBootstrap />, text: 'Bootstrap' },
+ 
+];
 
 const AboutMe = () => {
   return (
@@ -69,6 +88,16 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
+        {/* Technology icons section */}
+          <div className="w-1/4 mt-48 px-20 ml-16">
+            <div className="grid grid-cols-2 gap-y-8">
+              {techIcons.map((tech, index) => (
+                <div key={index} className="flex justify-center text-gray-500 opacity-20 text-5xl">
+                  {tech.icon}
+                </div>
+              ))}
+            </div>
+          </div>
       </div>
     </section>
   );
