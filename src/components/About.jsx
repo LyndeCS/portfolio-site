@@ -50,7 +50,7 @@ const AboutMe = () => {
           <div className="text-white mb-6">
             <p className="text-xl text-justify">
               I graduated from the Web Development program at Fanshawe College in 2021, where I learned the foundations of HTML5, CSS3, JavaScript (ES6), LAMP (Linux, Apache, MySQL, PHP), and CMS (WordPress).
-              Since then, I've added React (up to v18), TypeScript, Firebase DB (NoSQL), and Node to my repertoire. I'm also familiar with Bootstrap, MUI, and Tailwind for styling.
+              Since then, I've added React (up to v18), TypeScript, Firebase DB (NoSQL), and Node to my repertoire, as well as Bootstrap, MUI, and Tailwind for styling.
             </p>
           </div>
 
