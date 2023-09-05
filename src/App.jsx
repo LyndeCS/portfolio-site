@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import DividerSVG from './components/DividerSVG';
+import DividerPeaksSVG from './components/DividerPeaksSVG';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <DividerSVG />
       <About />
+      <DividerPeaksSVG />
       <Portfolio />
       <Contact />
       <Footer />

@@ -23,7 +23,7 @@ const techIcons = [
 
 const AboutMe = () => {
   return (
-    <section id="about" className="bg-smoke-500 py-24 min-h-screen">
+    <section id="about" className="bg-smoke-500 pt-24">
       <div className="container mx-auto flex justify-start">
         {/* Left section with image and social links */}
         <div className="w-1/4">
