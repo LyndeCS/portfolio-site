@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaGithub } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 import logo from '../assets/logo.png';
 
@@ -15,13 +15,14 @@ const Navbar = () => {
         </div>
         
         <div className="flex items-center space-x-4">
-          <a className="text-lg text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://twitter.com">
-            <FaTwitter />
-            <span></span>
+          <a className="text-lg text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://www.linkedin.com/in/chrislynde/">
+            <FaLinkedin />
           </a>
-          <a className="text-lg text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://github.com">
+          <a className="text-lg text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://twitter.com/lynde_chris">
+            <FaTwitter />
+          </a>
+          <a className="text-lg text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://github.com/LyndeCS">
             <FaGithub />
-            <span></span>
           </a>
           <a className="text-lg text-meadow-500 hover:text-meadow-700 transition duration-300 ease-in-out" href="mailto:lyndechris@gmail.com">
             <FiMail size={24}/>

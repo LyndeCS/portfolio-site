@@ -1,97 +1,77 @@
-import React, { useState } from 'react';
-import {FaArrowRight} from 'react-icons/fa';
-import {FiSmile} from 'react-icons/fi';
-import {LuStars} from 'react-icons/lu';
-import {LiaToolsSolid} from 'react-icons/lia';
-import yourImage from '../assets/stock_selfie.png'; // Adjust the path and file format as needed
+import React from 'react';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import headshot from '../assets/stock_selfie.png';
 
-
-const About = () => {
-  // State to track the active card and its content
-  const [activeCard, setActiveCard] = useState('aboutMe');
-
-  // Data for the cards
-  const cardData = {
-    aboutMe: {
-      cardHeading: 'About Me',
-      cardSubheading: 'More about who I am',
-      descHeading: "Hi, I'm Chris.",
-      descSubheading: "Personal Life:",
-      description: "I graduated from the Web Development program at Fanshawe College in 2021. Since then I've been creating websites, apps, you name it, in order to improve my skills as a developer. When I'm not working, I like to be in the sun and stay active by playing volleyball or running. I always try to make time to hangout with friends and family, and its rare that I'm not smiling or laughing. I can't live without music, I love reading science-fiction novels, and I'm a bit of a cinephile.",
-      icon: <FiSmile />,
-    },
-    experience: {
-      cardHeading: 'Experience',
-      cardSubheading: "Projects I've worked on",
-      descHeading: '',
-      descSubheading: "A brief summary of the projects I've worked on.",
-      description: "",
-      icon: <LuStars />,
-    },
-    technologies: {
-      cardHeading: 'Skills',
-      cardSubheading: "Languages/Frameworks I'm familiar with",
-      descHeading: '',
-      descSubheading: "The tools I have experience with and feel comfortable using.",
-      description: "",
-      icon: <LiaToolsSolid />,
-    },
-  };
-
-  // Function to handle card clicks
-  const handleCardClick = (card) => {
-    setActiveCard(card);
-  };
-
+const AboutMe = () => {
   return (
-    <section className="bg-smoke-500 pt-32 min-h-screen">
-      <div className="container mx-auto flex">
+    <section id="about" className="bg-smoke-500 py-24 min-h-screen">
+      <div className="container mx-auto flex justify-start">
+        {/* Left section with image and social links */}
+        <div className="w-1/4">
+          {/* Your profile image */}
+          <img
+            src={headshot}
+            alt="Your Name"
+            className="rounded w-48 h-64 object-cover scale-x-[-1]"
+          />
 
-        {/* Left container with vertically stacked cards */}
-        <div className="flex flex-col w-1/4 space-y-8 justify-between">
-          {Object.keys(cardData).map((card) => (
-            <div
-              key={card}
-              className={`flex-item rounded-md p-4 ${
-                activeCard === card ? 'bg-smoke-500 cursor-default border border-meadow-500' : 'cursor-pointer bg-smoke-300 hover:bg-smoke-300'
-              }`}
-              onClick={() => handleCardClick(card)}
-            >
-                <div className="flex items-center justify-start pb-2">
-                    <div className={`text-5xl ${activeCard === card ? 'text-meadow-500' : 'text-[#8c8c8c]'}`}>{cardData[card].icon}</div>
-                    <div className="pl-4">
-              <h3 className={`text-2xl pb-2 ${activeCard === card ? 'text-meadow-500' : 'text-white'}`}>{cardData[card].cardHeading}</h3>
-              <p className={`${activeCard === card ? 'text-white' : 'text-[#8c8c8c]'}`}>{cardData[card].cardSubheading}</p>
-              </div>
-               <div className={`text-meadow-500 text-xl ml-auto ${activeCard === card ? 'visible' : 'invisible'}`}><FaArrowRight/></div>
-              </div>
-            </div>
-          ))}
-        </div>
+          {/* Social media links */}
+  <div className="mt-8 flex flex-col space-y-4 text-sm">
+    <div className="flex items-center">
+      <FaGithub size={16} className="text-gray-500"/>
+      <a href="https://github.com/LyndeCS" className="text-white ml-4 hover:text-meadow-500">Follow on GitHub</a>
+    </div>
+    <div className="flex items-center">
+      <FaLinkedin size={16} className="text-gray-500"/>
+      <a href="https://www.linkedin.com/in/chrislynde/" className="text-white ml-4 hover:text-meadow-500">Follow on LinkedIn</a>
+    </div>
+    <div className="flex items-center">
+      <FaTwitter size={16} className="text-gray-500"/>
+      <a href="https://twitter.com/lynde_chris" className="text-white ml-4 hover:text-meadow-500">Follow on Twitter</a>
+    </div>
+    <hr className="w-1/2 bg-gray-500 h-[1px] border-none opacity-50"></hr>
+    <div className="flex items-center">
+      <FaEnvelope size={16} className="text-gray-500"/>
+      <a href="mailto:lyndechris@gmail.com" className="text-white ml-4 hover:text-meadow-500">lyndechris@gmail.com</a>
+    </div>
+  </div>
+</div>
 
-        {/* Right container with dynamic content */}
-        <div className="w-3/4">
-            <div className="flex h-full flex-col">
-                <div>
-                    <div className="flex items-center">
-                        <div className="w-3/4 pl-32 pr-20">
-                            <h2 className="text-6xl text-white pb-12">{cardData[activeCard].descHeading}</h2>
-                            <h3 className="text-4xl text-white pb-12">{cardData[activeCard].descSubheading}</h3>
-                            <p className="text-white text-2xl justify-content">{cardData[activeCard].description}</p>
-                        </div>
-                        <div className="w-1/4">
-                        <img src={yourImage} alt="Your Image"  />
-                        </div>
-                    </div>
-                </div>
-                <div className="rounded-b-xl h-full text-justify">
-                    
-                </div>
-            </div>
+        {/* Right section with your information */}
+        <div className="w-2/4">
+          <h1 className="text-4xl font-bold text-white mb-6">My name is <span className="text-meadow-500">Christopher Lynde</span>.</h1>
+          <h1 className="text-4xl font-bold text-white mb-12">I'm a full-stack developer with a passion for creating <span className="underline italic decoration-meadow-500">stylish and intuitive interfaces.</span></h1>
+          <div className="text-white mb-6">
+            <p className="text-xl text-justify">
+              I believe in respecting the user. <span className="italic decoration-meadow-500 bg-shark-300">Fewer clicks, faster results.</span> In order to deliver on this principle, I'm driven to discover all that is possible of the tools at my disposal. As a result, and in addition to being naturally curious, I am excited to engage with new technologies and take every opportunity to synthesize new knowledge in order to build the best product imaginable.
+            </p>
+          </div>
+
+          <div className="text-white mb-6">
+            <p className="text-xl text-justify">
+              I graduated from the Web Development program at Fanshawe College in 2021, where I learned the foundations of HTML5, CSS3, JavaScript (ES6), LAMP (Linux, Apache, MySQL, PHP), and CMS (WordPress).
+              Since then, I've added React (up to v18), TypeScript, Firebase DB (NoSQL), and Node to my repertoire. I'm also familiar with Bootstrap, MUI, and Tailwind for styling.
+            </p>
+          </div>
+
+          <div className="text-white mb-6">
+            <p className="text-xl text-justify">
+              I spend most of my time creating websites, apps, discord bots, you name it, in order to improve my skills as a developer.
+              I gravitate towards building interfaces - I love finding ways to make interactions as intuitive and accessible as possible while maintaining a sleek and thematic style.
+            </p>
+          </div>
+
+          <div className="text-white">
+            <p className="text-xl text-justify">
+              When I'm not working, I like to be in the sun and stay active by playing volleyball or running.
+              I always try to make time to hangout with friends and family, and its rare that I'm not smiling or laughing.
+              I can't live without music, I love reading science-fiction novels, and I'm a bit of a cinephile.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default About;
+export default AboutMe;
