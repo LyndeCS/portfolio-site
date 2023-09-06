@@ -92,7 +92,7 @@ const AboutMe = () => {
           <div className="w-1/4 mt-48 px-20 ml-16">
             <div className="grid grid-cols-2 gap-y-8">
               {techIcons.map((tech, index) => (
-                <div key={index} className="flex justify-center text-gray-500 opacity-20 text-5xl">
+                <div key={index} className="flex justify-center text-gray-500 text-5xl">
                   {tech.icon}
                 </div>
               ))}
