@@ -1,11 +1,11 @@
 import React from 'react';
-import ajendaImg from '../assets/ajenda-card.png';
-import ajendaLandingImg from '../assets/ajenda-landing-card.png';
-import streamwakeImg from '../assets/streamwake_card.png';
+import ajendaImg from '../assets/a_card.png';
+import ajendaLandingImg from '../assets/alp_card.png';
+import streamwakeImg from '../assets/sw_card.png';
 
 const Portfolio = () => {
   // Data for portfolio items
-  const portfolioItems = [
+  const projects = [
     {
       id: 1,
       title: 'Ajenda (Landing Page)',
@@ -34,11 +34,11 @@ const Portfolio = () => {
     <section id="portfolio" className="bg-smoke-500 py-20">
       <div className="container mx-auto">
         <h2 className="text-4xl text-white mb-8"></h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-24">
-          {portfolioItems.map((item) => (
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-24">
+          {projects.map((item) => (
             <div key={item.id} className="bg-smoke-100 rounded-lg h-[30rem] flex flex-col p-2">
-              <img src={item.image} alt={item.title} className="aspect-video overflow-hidden rounded-t-lg" />
-              <div className="flex flex-col justify-between h-3/4 pt-2 px-2">
+              <img src={item.image} alt={item.title} className="rounded-t-lg" />
+              <div className="flex flex-col justify-between h-2/3 pt-2 px-2">
                 <h3 className="text-white text-2xl my-2">{item.title}</h3>
                 <p className="text-gray-400 mb-auto">{item.description}</p>
                 <div className="flex flex-wrap">

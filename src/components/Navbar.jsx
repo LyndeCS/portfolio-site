@@ -6,7 +6,7 @@ import logo from '../assets/logo.png';
 const Navbar = () => {
   return (
     <nav className="bg-smoke-500 py-8">
-      <div className="container mx-auto flex justify-between items-center px-4">
+      <div className="container mx-auto flex justify-between items-center">
           <div className="text-white text-xl"><span className="text-meadow-500">&lt;</span>Christopher Lynde <span className="text-meadow-500">&#47;&gt;</span></div>
         <div className="space-x-40">
           <a className="text-white hover:text-meadow-500 text-xl transition duration-300 ease-in-out" href="#about">About</a>

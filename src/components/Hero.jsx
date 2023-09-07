@@ -1,6 +1,5 @@
 import React from 'react';
 import softwareSvg from '../assets/art/software.svg';
-import cbSvg from '../assets/art/cherryblossom.svg';
 
 const Hero = () => {
   return (
@@ -17,10 +16,6 @@ const Hero = () => {
           <img src={softwareSvg} alt="Software Illustration" className="w-full h-full" />
         </div>
       </div>
-      {/* <div>
-      <img src={cbSvg} alt="Software Illustration" className="w-1/2 h-screen top-screen left-0 opacity-10 absolute scale-x-[-1]" />
-      <img src={cbSvg} alt="Software Illustration" className="w-1/2 h-screen top-screen right-0 opacity-10 absolute" />
-      </div> */}
     </section>
   );
 };
