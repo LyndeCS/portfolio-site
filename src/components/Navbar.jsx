@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
-import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (
