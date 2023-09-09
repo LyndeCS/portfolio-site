@@ -2,7 +2,9 @@ import React from 'react';
 import ajendaImg from '../assets/a_card.png';
 import ajendaLandingImg from '../assets/alp_card.png';
 import streamwakeImg from '../assets/sw_card.png';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaReact, FaNodeJs, FaDiscord } from 'react-icons/fa';
+import { BiLogoTypescript, BiLogoTailwindCss } from 'react-icons/bi';
+import { SiMui, SiFirebase } from 'react-icons/si';
 
 const Portfolio = () => {
   // Data for portfolio items
@@ -19,7 +21,7 @@ const Portfolio = () => {
     {
       id: 2,
       title: 'Ajenda - Task Manager/Scheduler',
-      description: 'Task management and scheduling app. Create tasks to be accompished, then schedule them in the calendar to stay organized.',
+      description: 'Task management and scheduling app. Create tasks to be accomplished, then schedule them in the calendar to stay organized.',
       image: ajendaImg, 
       tools: ['React', 'Firebase', 'MUI'],
       link: 'https://ajenda.web.app/',
@@ -30,7 +32,7 @@ const Portfolio = () => {
       title: 'Streamwake - Discord bot',
       description: 'Suggest shows to watch, admin selects watchlist from recently watched shows and suggested shows. User viewing activity is logged to keep track of episodes watched.',
       image: streamwakeImg,
-      tools: ['JavaScript', 'Node.js', 'Discord.js'],
+      tools: ['Node.js', 'Discord.js'],
       link: 'https://github.com/LyndeCS/Streamwake',
       git: 'https://github.com/LyndeCS/Streamwake',
     },
@@ -40,7 +42,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="bg-smoke-500 py-20">
       <div className="container mx-auto">
-        <h2 className="text-4xl text-white mb-16 italic underline font-serif">Portfolio</h2>
+        <h2 className="text-2xl text-white mb-16 italic"><span className=""><span className="text-meadow-500">&lt;</span>Portfolio <span className="text-meadow-500">&#47;&gt;</span></span></h2>
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-24">
           {projects.map((item) => (
             <div key={item.id} className="bg-smoke-500 shadow-sm border-t border-t-meadow-300 shadow-meadow-300 rounded-lg h-[30rem] flex flex-col p-2">
@@ -51,17 +53,28 @@ const Portfolio = () => {
               </div>
               <div className="flex flex-col justify-between h-2/3 pt-2 px-2">
                 <a href={item.link} target="_blank" rel="noopener noreferrer"><h3 className="text-white text-2xl mt-2 mb-4 hover:underline">{item.title}</h3></a>
-                <p className="text-white opacity-60 mb-auto">{item.description}</p>
+                <p className="text-white opacity-70 mb-auto">{item.description}</p>
                 <div className="flex flex-wrap">
                   {item.tools.map((tool, index) => (
                     <span
                       key={index}
-                      className="bg-smoke-500 text-white opacity-60 text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2"
+                      className="text-md pr-4 flex items-center"
                     >
+                      {/* Icon and technology name */}
+                      {tool === 'React' && <FaReact size={20} className="mr-1 text-[#60DAFA]" />}
+                      {tool === 'Node.js' && <FaNodeJs size={20} className="mr-1 text-[#8DC94A]" />}
+                      {tool === 'Firebase' && <SiFirebase size={20} className="mr-1 text-[#FEA613]" />}
+                      {tool === 'GitHub' && <FaGithub size={20} className="mr-1" />}
+                      {tool === 'Discord.js' && <FaDiscord size={20} className="mr-1 text-[#5665ED]" />}
+                      {tool === 'TypeScript' && <BiLogoTypescript size={20} className="mr-1 text-[#3077C5]" />}
+                      {tool === 'Tailwind' && <BiLogoTailwindCss size={20} className="mr-1 text-[#0DC4B9]" />}
+                      {tool === 'MUI' && <SiMui size={20} className="mr-1 text-blue-500" />}
+                      <span className="text-white opacity-70">
                       {tool}
+                      </span>
                     </span>
                   ))}
-                  <a href={item.git} target="_blank" rel="noopener noreferrer" className="text-sm ml-auto text-meadow-500 flex flex-row gap-x-2 items-center hover:underline"><span className="hidden xl:flex">GitHub</span><FaGithub size={24}/></a>
+                  <a href={item.git} target="_blank" rel="noopener noreferrer" className="text-md ml-auto text-meadow-500 flex flex-row gap-x-2 items-center hover:underline"><span className="hidden xl:flex">GitHub</span><FaGithub size={24}/></a>
                 </div>
               </div>
             </div>

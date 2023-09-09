@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-smoke-500 py-20">
       <div className="container mx-auto">
-        <h2 className="text-4xl text-white mb-8">Contact Me</h2>
+        <h2 className="text-2xl text-white mb-16 italic"><span className=""><span className="text-meadow-500">&lt;</span>Contact <span className="text-meadow-500">&#47;&gt;</span></span></h2>
         <div className="max-w-md mx-auto p-6 bg-smoke-100 rounded-lg">
           <form>
             <div className="mb-4">

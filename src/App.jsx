@@ -17,6 +17,7 @@ function App() {
       <About />
       <DividerPeaksSVG />
       <Portfolio />
+      <DividerPeaksSVG />
       <Contact />
       <Footer />
     </div>
