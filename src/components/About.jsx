@@ -38,15 +38,15 @@ const AboutMe = () => {
   <div className="mt-8 flex flex-col space-y-4 text-sm">
     <div className="flex items-center">
       <FaGithub size={16} className="text-gray-500"/>
-      <a href="https://github.com/LyndeCS" className="text-white ml-4 hover:text-meadow-500">Follow on GitHub</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/LyndeCS" className="text-white ml-4 hover:text-meadow-500">Follow on GitHub</a>
     </div>
     <div className="flex items-center">
       <FaLinkedin size={16} className="text-gray-500"/>
-      <a href="https://www.linkedin.com/in/chrislynde/" className="text-white ml-4 hover:text-meadow-500">Follow on LinkedIn</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/chrislynde/" className="text-white ml-4 hover:text-meadow-500">Follow on LinkedIn</a>
     </div>
     <div className="flex items-center">
       <FaTwitter size={16} className="text-gray-500"/>
-      <a href="https://twitter.com/lynde_chris" className="text-white ml-4 hover:text-meadow-500">Follow on Twitter</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/lynde_chris" className="text-white ml-4 hover:text-meadow-500">Follow on Twitter</a>
     </div>
     <hr className="w-1/2 bg-gray-500 h-[1px] border-none opacity-50"></hr>
     <div className="flex items-center">

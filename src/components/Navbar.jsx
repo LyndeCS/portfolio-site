@@ -14,13 +14,13 @@ const Navbar = () => {
         </div>
         
         <div className="flex items-center space-x-4">
-          <a className="text-xl text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://www.linkedin.com/in/chrislynde/">
+          <a target="_blank" rel="noopener noreferrer" className="text-xl text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://www.linkedin.com/in/chrislynde/">
             <FaLinkedin />
           </a>
-          <a className="text-xl text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://twitter.com/lynde_chris">
+          <a target="_blank" rel="noopener noreferrer" className="text-xl text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://twitter.com/lynde_chris">
             <FaTwitter />
           </a>
-          <a className="text-xl text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://github.com/LyndeCS">
+          <a target="_blank" rel="noopener noreferrer" className="text-xl text-gray-400 hover:text-meadow-500 transition duration-300 ease-in-out flex items-center space-x-2" href="https://github.com/LyndeCS">
             <FaGithub />
           </a>
           <a className="text-xl text-meadow-500 hover:text-meadow-700 transition duration-300 ease-in-out" href="mailto:lyndechris@gmail.com">
