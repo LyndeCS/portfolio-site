@@ -3,8 +3,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-4 text-center text-zinc-600">
-      <p>&copy; {new Date().getFullYear()} Christopher Lynde. All rights reserved.</p>
+    <footer className="bg-smoke-500 py-4 text-center text-zinc-600">
+      <p>&copy; 2023 Christopher Lynde. All rights reserved.</p>
     </footer>
   );
 };

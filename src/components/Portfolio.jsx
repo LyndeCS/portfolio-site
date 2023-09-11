@@ -30,7 +30,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: 'Streamwake - Discord bot',
-      description: 'Suggest shows to watch, admin selects watchlist from recently watched shows and suggested shows. User viewing activity is logged to keep track of episodes watched.',
+      description: 'Suggest shows to watch, add shows to the watchlist from recently watched shows and suggested shows. User viewing activity is logged to keep track of episodes watched.',
       image: streamwakeImg,
       tools: ['Node.js', 'Discord.js'],
       link: 'https://github.com/LyndeCS/Streamwake',
@@ -64,7 +64,6 @@ const Portfolio = () => {
                       {tool === 'React' && <FaReact size={20} className="mr-1 text-[#60DAFA]" />}
                       {tool === 'Node.js' && <FaNodeJs size={20} className="mr-1 text-[#8DC94A]" />}
                       {tool === 'Firebase' && <SiFirebase size={20} className="mr-1 text-[#FEA613]" />}
-                      {tool === 'GitHub' && <FaGithub size={20} className="mr-1" />}
                       {tool === 'Discord.js' && <FaDiscord size={20} className="mr-1 text-[#5665ED]" />}
                       {tool === 'TypeScript' && <BiLogoTypescript size={20} className="mr-1 text-[#3077C5]" />}
                       {tool === 'Tailwind' && <BiLogoTailwindCss size={20} className="mr-1 text-[#0DC4B9]" />}
