@@ -1,5 +1,5 @@
-import React from 'react';
-import wavesSvg from '../assets/art/peaks200.svg'; // Adjust the path as needed
+import React from "react";
+import wavesSvg from "../assets/art/peaks200.svg"; // Adjust the path as needed
 
 const DividerSVG = () => {
   return (

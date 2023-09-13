@@ -1,5 +1,12 @@
-import React from 'react';
-import { FaPhone, FaEnvelope, FaMapMarker, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import React from "react";
+import {
+  FaPhone,
+  FaEnvelope,
+  FaMapMarker,
+  FaTwitter,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -7,7 +14,7 @@ const Contact = () => {
       <div className="container mx-auto">
         <h2 className="text-2xl text-white mb-16 italic">
           <span className="">
-            <span className="text-meadow-500">&lt;</span>Contact{' '}
+            <span className="text-meadow-500">&lt;</span>Contact{" "}
             <span className="text-meadow-500">&#47;&gt;</span>
           </span>
         </h2>
@@ -38,9 +45,11 @@ const Contact = () => {
             </a>
           </div>
 
-           {/* Middle column for the contact form */}
+          {/* Middle column for the contact form */}
           <div className="max-w-md mx-auto p-6 bg-smoke-500">
-            <h2 className="text-white text-3xl mb-8">Feel free to reach out to me</h2>
+            <h2 className="text-white text-3xl mb-8">
+              Feel free to reach out to me
+            </h2>
             <form>
               <div className="mb-4">
                 <input
@@ -85,38 +94,38 @@ const Contact = () => {
             <h2 className="text-white text-3xl mb-4">Connect with Me</h2>
             <ul className="text-white">
               <li className="mb-4 flex items-center">
-      <FaGithub/>
-      <a
-        href="https://www.linkedin.com/in/chrislynde/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-meadow-500 hover:underline ml-2"
-      >
-        GitHub
-      </a>
-    </li>
+                <FaGithub />
+                <a
+                  href="https://www.linkedin.com/in/chrislynde/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-meadow-500 hover:underline ml-2"
+                >
+                  GitHub
+                </a>
+              </li>
               <li className="mb-4 flex items-center">
-      <FaLinkedin />
-      <a
-        href="https://www.linkedin.com/in/chrislynde/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-meadow-500 hover:underline ml-2"
-      >
-        LinkedIn
-      </a>
-    </li>
+                <FaLinkedin />
+                <a
+                  href="https://www.linkedin.com/in/chrislynde/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-meadow-500 hover:underline ml-2"
+                >
+                  LinkedIn
+                </a>
+              </li>
               <li className="mb-4 flex items-center">
-      <FaTwitter />
-      <a
-        href="https://twitter.com/your-twitter-profile"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-meadow-500 hover:underline ml-2"
-      >
-        Twitter
-      </a>
-    </li>
+                <FaTwitter />
+                <a
+                  href="https://twitter.com/your-twitter-profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-meadow-500 hover:underline ml-2"
+                >
+                  Twitter
+                </a>
+              </li>
             </ul>
           </div>
         </div>
