@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone, FaEnvelope, FaMapMarker } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarker, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -84,28 +84,39 @@ const Contact = () => {
           <div className="max-w-md mx-auto p-6 bg-smoke-500">
             <h2 className="text-white text-3xl mb-4">Connect with Me</h2>
             <ul className="text-white">
-              <li className="mb-4">
-                {/* Add your social media links and icons here */}
-                <a
-                  href="https://www.linkedin.com/in/your-profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-meadow-500 hover:underline"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li className="mb-4">
-                <a
-                  href="https://github.com/your-username"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-meadow-500 hover:underline"
-                >
-                  GitHub
-                </a>
-              </li>
-              {/* Add more social media links as needed */}
+              <li className="mb-4 flex items-center">
+      <FaGithub/>
+      <a
+        href="https://www.linkedin.com/in/chrislynde/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-meadow-500 hover:underline ml-2"
+      >
+        GitHub
+      </a>
+    </li>
+              <li className="mb-4 flex items-center">
+      <FaLinkedin />
+      <a
+        href="https://www.linkedin.com/in/chrislynde/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-meadow-500 hover:underline ml-2"
+      >
+        LinkedIn
+      </a>
+    </li>
+              <li className="mb-4 flex items-center">
+      <FaTwitter />
+      <a
+        href="https://twitter.com/your-twitter-profile"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-meadow-500 hover:underline ml-2"
+      >
+        Twitter
+      </a>
+    </li>
             </ul>
           </div>
         </div>
