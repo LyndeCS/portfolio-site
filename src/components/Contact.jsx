@@ -18,9 +18,9 @@ const Contact = () => {
 						<span className="text-meadow-500">&#47;&gt;</span>
 					</span>
 				</h2>
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div className="flex flex-row gap-16">
 					{/* Left column for personal information */}
-					<div className="max-w-md mx-auto p-6 bg-smoke-500">
+					<div className="w-1/3">
 						<h2 className="text-white text-3xl mb-4">Contact Information</h2>
 						<ul className="text-white">
 							<li className="mb-4 flex items-center">
@@ -42,7 +42,7 @@ const Contact = () => {
 					</div>
 
 					{/* Middle column for the contact form */}
-					<div className="max-w-md mx-auto p-6 bg-smoke-500">
+					<div className="w-1/3">
 						<h2 className="text-white text-3xl mb-8">
 							Feel free to reach out to me
 						</h2>
@@ -86,7 +86,7 @@ const Contact = () => {
 					</div>
 
 					{/* Right column for social media links */}
-					<div className="max-w-md mx-auto p-6 bg-smoke-500">
+					<div className="w-1/3">
 						<h2 className="text-white text-3xl mb-4">Connect with Me</h2>
 						<ul className="text-white">
 							<li className="mb-4 flex items-center">
