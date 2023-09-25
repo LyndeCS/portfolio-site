@@ -21,7 +21,7 @@ const Contact = () => {
 				<div className="flex flex-row gap-16">
 					{/* Left column for personal information */}
 					<div className="w-1/3">
-						<h2 className="text-white text-3xl mb-4">Contact Information</h2>
+						<h2 className="text-white text-3xl mb-8">Contact Information</h2>
 						<ul className="text-white">
 							<li className="mb-4 flex items-center">
 								<FaEnvelope className="mr-2" />
@@ -87,7 +87,7 @@ const Contact = () => {
 
 					{/* Right column for social media links */}
 					<div className="w-1/3">
-						<h2 className="text-white text-3xl mb-4">Connect with Me</h2>
+						<h2 className="text-white text-3xl mb-8">Connect with Me</h2>
 						<ul className="text-white">
 							<li className="mb-4 flex items-center">
 								<FaGithub />
