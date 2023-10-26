@@ -100,7 +100,7 @@ const Contact = () => {
 							<li className="mb-8 flex items-center">
 								<FaLinkedin />
 								<a
-									href="https://www.linkedin.com/in/chrislynde/"
+									href="https://github.com/LyndeCS"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-meadow-500 hover:underline ml-2"
@@ -111,7 +111,7 @@ const Contact = () => {
 							<li className="mb-8 flex items-center">
 								<FaTwitter />
 								<a
-									href="https://twitter.com/your-twitter-profile"
+									href="https://twitter.com/lynde_chris"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-meadow-500 hover:underline ml-2"
