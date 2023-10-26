@@ -12,32 +12,28 @@ const Contact = () => {
 	return (
 		<section id="contact" className="bg-smoke-500 py-20">
 			<div className="container mx-auto">
-				<h2 className="text-2xl text-white mb-16 italic">
+				<h2 className="text-2xl text-white italic mb-16">
 					<span className="">
 						<span className="text-meadow-500">&lt;</span>Contact{" "}
 						<span className="text-meadow-500">&#47;&gt;</span>
 					</span>
 				</h2>
+				<h1 className="text-4xl text-white text-center mb-24 font-bold mx-auto">
+					Feel free to reach out regarding job opportunities, project ideas, or
+					anything else.
+				</h1>
 				<div className="flex flex-row gap-16">
 					{/* Left column for personal information */}
-					<div className="w-1/3">
+					<div className="w-1/3 text-white">
 						{/* <h2 className="text-white text-3xl mb-8">Contact Information</h2> */}
 						<ul className="text-white text-xl">
-							<li className="mb-8 flex items-center justify-end ">
+							<li className="mb-8 flex items-center justify-end">
 								<FaEnvelope className="mr-2" />
-								Email: lyndechris@gmail.com
+								lyndechris@gmail.com
 							</li>
 							<li className="mb-8 flex items-center justify-end">
 								<FaMapMarker className="mr-2" />
-								Location: London, Ontario
-							</li>
-							<li className="mb-8 flex items-center justify-end">
-								<a
-									href="/path/to/your/resume.pdf"
-									className="text-meadow-500 hover:underline justify-end"
-								>
-									Download Resume
-								</a>
+								London, Ontario
 							</li>
 						</ul>
 					</div>
