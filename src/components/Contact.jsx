@@ -7,9 +7,33 @@ import {
 	FaLinkedin,
 	FaGithub,
 } from "react-icons/fa";
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+// const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+	emailjs.init(PUBLIC_KEY);
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		// const templateParams = {
+		// 	from_name: e.target.name.value,
+		// 	from_email: e.target.email.value,
+		// 	from_message: e.target.message.value,
+		// };
+
+		emailjs.sendForm("default_service", TEMPLATE_ID, e.target, PUBLIC_KEY).then(
+			(result) => {
+				alert("Email sent successfully:", result);
+			},
+			(error) => {
+				alert("Email sending failed:", error);
+			}
+		);
+	};
+
 	return (
 		<section id="contact" className="bg-smoke-500 py-20">
 			<div className="container mx-auto">
@@ -26,7 +50,6 @@ const Contact = () => {
 				<div className="flex flex-row gap-16">
 					{/* Left column for personal information */}
 					<div className="w-1/3 text-white">
-						{/* <h2 className="text-white text-3xl mb-8">Contact Information</h2> */}
 						<ul className="text-white text-xl">
 							<li className="mb-8 flex items-center justify-end">
 								<FaEnvelope className="mr-2" />
@@ -41,10 +64,7 @@ const Contact = () => {
 
 					{/* Middle column for the contact form */}
 					<div className="w-1/3">
-						{/* <h2 className="text-white text-3xl mb-8">
-							Feel free to reach out to me
-						</h2> */}
-						<form>
+						<form id="contact-form" onSubmit={handleSubmit}>
 							<div className="mb-4">
 								<input
 									type="text"
@@ -85,7 +105,6 @@ const Contact = () => {
 
 					{/* Right column for social media links */}
 					<div className="w-1/3">
-						{/* <h2 className="text-white text-3xl mb-8">Connect with Me</h2> */}
 						<ul className="text-white text-xl">
 							<li className="mb-8 flex items-center">
 								<FaGithub />
