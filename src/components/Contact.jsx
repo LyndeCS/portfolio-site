@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
 	FaPhone,
 	FaEnvelope,
@@ -13,6 +13,7 @@ const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+	const formRef = useRef();
 	emailjs.init(PUBLIC_KEY);
 
 	const handleSubmit = (e) => {
@@ -26,10 +27,11 @@ const Contact = () => {
 
 		emailjs.sendForm("default_service", TEMPLATE_ID, e.target, PUBLIC_KEY).then(
 			(result) => {
-				alert("Email sent successfully:", result);
+				alert("Email sent successfully.");
+				formRef.current.reset();
 			},
 			(error) => {
-				alert("Email sending failed:", error);
+				alert("Email failed to send.");
 			}
 		);
 	};
@@ -64,7 +66,7 @@ const Contact = () => {
 
 					{/* Middle column for the contact form */}
 					<div className="w-1/3">
-						<form id="contact-form" onSubmit={handleSubmit}>
+						<form ref={formRef} id="contact-form" onSubmit={handleSubmit}>
 							<div className="mb-4">
 								<input
 									type="text"
