@@ -7,6 +7,7 @@ import {
 	FaLinkedin,
 	FaGithub,
 } from "react-icons/fa";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
 	return (
