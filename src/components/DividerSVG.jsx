@@ -7,7 +7,7 @@ const DividerSVG = () => {
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 900 200"
 			preserveAspectRatio="xMidYMid meet"
-			className="w-full h-auto"
+			className="w-full h-auto z-0"
 		>
 			<path fill="#141419" d="M0 0h900v200H0z" />
 			<path
