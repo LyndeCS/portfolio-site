@@ -13,7 +13,7 @@ const Navbar = () => {
 				</div>
 
 				{/* NAV LINKS */}
-				<div className="flex-grow md:flex-none sm:space-x-8 lg:space-x-20 xl:space-x-40 flex justify-around w-full md:w-fit  sm:px-12">
+				<div className="flex-grow md:flex-none sm:space-x-8 lg:space-x-20 xl:space-x-40 flex justify-around w-full md:w-fit sm:px-12 decoration-meadow-500 decoration-1 underline underline-offset-2 md:no-underline">
 					<a
 						className="text-white hover:text-meadow-500 text-xl transition duration-300 ease-in-out"
 						href="#about"
