@@ -49,7 +49,7 @@ const Contact = () => {
 					Feel free to reach out regarding job opportunities, project ideas, or
 					anything else.
 				</h1>
-				<div className="flex flex-row gap-16">
+				<div className="flex flex-col md:flex-row gap-16">
 					{/* Left column for personal information */}
 					<div className="w-1/3 text-white">
 						<ul className="text-white text-xl">

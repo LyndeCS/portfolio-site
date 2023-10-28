@@ -41,13 +41,13 @@ const techIcons = [
 	{ icon: <FaBootstrap />, text: "Bootstrap" },
 ];
 
-const AboutMe = () => {
+const About = () => {
 	return (
 		<section id="about" className="bg-smoke-500 pt-24">
 			<div className="container mx-auto flex justify-start">
 				{/* Left section with image and social links */}
 				<div className="w-1/4">
-					{/* Your profile image */}
+					{/* Profile image */}
 					<img
 						src={headshot}
 						alt="Your Name"
@@ -102,7 +102,7 @@ const AboutMe = () => {
 					</div>
 				</div>
 
-				{/* Right section with your information */}
+				{/* Middle section with paragraphs */}
 				<div className="w-2/4">
 					<h1 className="text-4xl font-bold text-white mb-6">
 						My name is{" "}
@@ -160,7 +160,7 @@ const AboutMe = () => {
 					</div>
 				</div>
 				{/* Technology icons section */}
-				<div className="w-1/4 mt-48 px-20 ml-16">
+				<div className="hidden md:block md:w-1/4 md:mt-48 md:px-20 md:ml-16">
 					<div className="grid grid-cols-2 gap-y-8">
 						{techIcons.map((tech, index) => (
 							<div
@@ -177,4 +177,4 @@ const AboutMe = () => {
 	);
 };
 
-export default AboutMe;
+export default About;
