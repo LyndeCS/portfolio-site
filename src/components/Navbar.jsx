@@ -4,7 +4,7 @@ import { FiMail } from "react-icons/fi";
 
 const Navbar = () => {
 	return (
-		<nav className="bg-smoke-500 py-4 md:py-8">
+		<nav className="bg-smoke-500 py-4 md:py-8 z-10 relative">
 			<div className="container mx-auto flex md:justify-between flex-col md:flex-row space-y-6 md:space-y-0 items-center">
 				{/* NAV LOGO */}
 				<div className="md:block text-white text-xl">

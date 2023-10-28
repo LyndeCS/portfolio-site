@@ -4,7 +4,7 @@ import softwareSvg from "../assets/art/software.svg";
 const Hero = () => {
 	return (
 		<section className="bg-smoke-500 text-white xl:pt-12 2xl:pt-32 pb-4 md:pb-0 h-[70vh] xl:h-[65vh] flex flex-col justify-center">
-			<div className="container mx-auto flex items-center">
+			<div className="container mx-auto flex items-center z-0">
 				{/* HERO TEXT BLOCK */}
 				<div className="w-full xl:w-1/2 text-center xl:text-start">
 					<h1 className="text-3xl xs:text-4xl sm:text-6xl xl:mb-6">
