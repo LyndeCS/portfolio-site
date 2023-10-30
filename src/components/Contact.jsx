@@ -47,15 +47,15 @@ const Contact = () => {
 					</span>
 				</h2>
 				{/* HEADER */}
-				<h1 className="text-xl sm:text-2xl lg:text-4xl text-white text-center mb-12 md:mb-24 font-bold mx-auto">
+				<h1 className="text-xl sm:text-2xl lg:text-4xl text-white text-center mb-16 lg:mb-24 font-bold mx-auto">
 					Feel free to reach out regarding job opportunities, project ideas, or
 					anything else.
 				</h1>
-				<div className="flex flex-col md:flex-row gap-x-16">
+				<div className="flex flex-col lg:flex-row gap-x-16">
 					{/* Left column for personal information */}
-					<div className="md:w-1/3 text-white order-2 md:order-1 mb-2 lg:mb-0">
-						<ul className="text-white text-lg md:text-xl flex justify-around md:block flex-wrap">
-							<li className="mb-2 xs:mb-0 md:mb-8 flex items-center justify-end">
+					<div className="lg:w-1/4 xl:w-1/3 text-white order-2 lg:order-1 mb-2 lg:mb-0">
+						<ul className="text-white text-lg lg:text-xl flex justify-around lg:block flex-wrap">
+							<li className="mb-2 xs:mb-0 lg:mb-8 flex items-center justify-end">
 								<FaEnvelope className="mr-2" />
 								lyndechris@gmail.com
 							</li>
@@ -67,7 +67,7 @@ const Contact = () => {
 					</div>
 
 					{/* Middle column for the contact form */}
-					<div className="md:w-1/3 order-1 md:order-2 mb-20 md:mb-0">
+					<div className="lg:w-2/4 xl:w-1/3 order-1 lg:order-2 mb-20 lg:mb-0">
 						<form ref={formRef} id="contact-form" onSubmit={handleSubmit}>
 							<div className="mb-4">
 								<input
@@ -108,9 +108,9 @@ const Contact = () => {
 					</div>
 
 					{/* Right column for social media links */}
-					<div className="md:w-1/3 order-3">
-						<ul className="flex justify-around md:block text-lg md:text-xl text-white flex-wrap gap-x-4 gap-y-4">
-							<li className="md:mb-8 flex items-center">
+					<div className="lg:w-1/4 xl:w-1/3 order-3">
+						<ul className="flex justify-around lg:block text-lg lg:text-xl text-white flex-wrap gap-x-4 gap-y-4">
+							<li className="lg:mb-8 flex items-center">
 								<FaGithub />
 								<a
 									href="https://www.linkedin.com/in/chrislynde/"
@@ -121,7 +121,7 @@ const Contact = () => {
 									GitHub
 								</a>
 							</li>
-							<li className="md:mb-8 flex items-center">
+							<li className="lg:mb-8 flex items-center">
 								<FaLinkedin />
 								<a
 									href="https://github.com/LyndeCS"
@@ -132,7 +132,7 @@ const Contact = () => {
 									LinkedIn
 								</a>
 							</li>
-							<li className="md:mb-8 flex items-center">
+							<li className="lg:mb-8 flex items-center">
 								<FaTwitter />
 								<a
 									href="https://twitter.com/lynde_chris"
