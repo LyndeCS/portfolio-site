@@ -37,27 +37,29 @@ const Contact = () => {
 	};
 
 	return (
-		<section id="contact" className="bg-smoke-500 py-20">
-			<div className="container mx-auto">
+		<section id="contact" className="bg-smoke-500 pt-4 md:pt-12 pb-12 md:pb-20">
+			<div className="container mx-auto px-4 md:px-8 xl:px-0">
+				{/* SECTION HEADER */}
 				<h2 className="text-lg md:text-2xl text-white mb-8 md:mb-16 italic">
 					<span className="">
 						<span className="text-meadow-500">&lt;</span>Contact{" "}
 						<span className="text-meadow-500">&#47;&gt;</span>
 					</span>
 				</h2>
-				<h1 className="text-4xl text-white text-center mb-24 font-bold mx-auto">
+				{/* HEADER */}
+				<h1 className="text-xl sm:text-2xl lg:text-4xl text-white text-center mb-12 md:mb-24 font-bold mx-auto">
 					Feel free to reach out regarding job opportunities, project ideas, or
 					anything else.
 				</h1>
-				<div className="flex flex-col md:flex-row gap-16">
+				<div className="flex flex-col md:flex-row gap-x-16">
 					{/* Left column for personal information */}
-					<div className="w-1/3 text-white">
-						<ul className="text-white text-xl">
-							<li className="mb-8 flex items-center justify-end">
+					<div className="md:w-1/3 text-white order-2 md:order-1 mb-2 lg:mb-0">
+						<ul className="text-white text-lg md:text-xl flex justify-around md:block flex-wrap">
+							<li className="mb-2 xs:mb-0 md:mb-8 flex items-center justify-end">
 								<FaEnvelope className="mr-2" />
 								lyndechris@gmail.com
 							</li>
-							<li className="mb-8 flex items-center justify-end">
+							<li className="flex items-center justify-end">
 								<FaMapMarker className="mr-2" />
 								London, Ontario
 							</li>
@@ -65,7 +67,7 @@ const Contact = () => {
 					</div>
 
 					{/* Middle column for the contact form */}
-					<div className="w-1/3">
+					<div className="md:w-1/3 order-1 md:order-2 mb-20 md:mb-0">
 						<form ref={formRef} id="contact-form" onSubmit={handleSubmit}>
 							<div className="mb-4">
 								<input
@@ -106,9 +108,9 @@ const Contact = () => {
 					</div>
 
 					{/* Right column for social media links */}
-					<div className="w-1/3">
-						<ul className="text-white text-xl">
-							<li className="mb-8 flex items-center">
+					<div className="md:w-1/3 order-3">
+						<ul className="flex justify-around md:block text-lg md:text-xl text-white flex-wrap gap-x-4 gap-y-4">
+							<li className="md:mb-8 flex items-center">
 								<FaGithub />
 								<a
 									href="https://www.linkedin.com/in/chrislynde/"
@@ -119,7 +121,7 @@ const Contact = () => {
 									GitHub
 								</a>
 							</li>
-							<li className="mb-8 flex items-center">
+							<li className="md:mb-8 flex items-center">
 								<FaLinkedin />
 								<a
 									href="https://github.com/LyndeCS"
@@ -130,7 +132,7 @@ const Contact = () => {
 									LinkedIn
 								</a>
 							</li>
-							<li className="mb-8 flex items-center">
+							<li className="md:mb-8 flex items-center">
 								<FaTwitter />
 								<a
 									href="https://twitter.com/lynde_chris"
