@@ -111,7 +111,7 @@ const About = () => {
 				</div>
 
 				{/* Middle section with paragraphs */}
-				<div className="flex-grow lg:w-2/4 pl-4 md:pl-8 lg:pl-0">
+				<div className="flex-grow lg:w-3/5 xl:w-2/4 pl-4 md:pl-8 lg:pl-0">
 					{/* HEADING/SUBHEADING */}
 					<div className="flex flex-col h-full justify-around md:h-min text-2xl xs:text-3xl sm:text-4xl sm:pl-4 md:pl-0">
 						<h1 className="font-bold text-white mb-6">
@@ -127,57 +127,48 @@ const About = () => {
 					</div>
 
 					{/* DESKTOP PARAGRAPHS */}
-					<div className="hidden md:block flex-grow">
-						<div className="text-white mb-6">
-							<p className="text-lg lg:text-xl md:text-justify">
-								I believe in respecting the user.{" "}
-								<span className="italic decoration-meadow-500 bg-shark-300">
-									Fewer clicks, faster results.
-								</span>{" "}
-								In order to deliver on this principle, I'm driven to discover
-								all that is possible of the tools at my disposal. As a result,
-								and in addition to being naturally curious, I am excited to
-								engage with new technologies and take every opportunity to
-								synthesize new knowledge in order to build the best product
-								imaginable.
-							</p>
-						</div>
+					<div className="hidden md:block flex-grow text-lg lg:text-xl md:text-justify text-white">
+						<p className="mb-6">
+							I believe in respecting the user.{" "}
+							<span className="italic decoration-meadow-500 bg-shark-300">
+								Fewer clicks, faster results.
+							</span>{" "}
+							In order to deliver on this principle, I'm driven to discover all
+							that is possible of the tools at my disposal. As a result, and in
+							addition to being naturally curious, I am excited to engage with
+							new technologies and take every opportunity to synthesize new
+							knowledge in order to build the best product imaginable.
+						</p>
 
-						<div className="text-white mb-6">
-							<p className="text-lg md:text-xl md:text-justify">
-								I graduated from the Web Development program at Fanshawe College
-								in 2021, where I learned the foundations of HTML5, CSS3,
-								JavaScript (ES6), LAMP (Linux, Apache, MySQL, PHP), and CMS
-								(WordPress). Since then, I've added React (up to v18),
-								TypeScript, Firebase DB (NoSQL), and Node to my repertoire, as
-								well as Bootstrap, MUI, and Tailwind for styling.
-							</p>
-						</div>
+						<p className="mb-6">
+							I graduated from the Web Development program at Fanshawe College
+							in 2021, where I learned the foundations of HTML5, CSS3,
+							JavaScript (ES6), LAMP (Linux, Apache, MySQL, PHP), and CMS
+							(WordPress). Since then, I've added React (up to v18), TypeScript,
+							Firebase DB (NoSQL), and Node to my repertoire, as well as
+							Bootstrap, MUI, and Tailwind for styling.
+						</p>
 
-						<div className="text-white mb-6">
-							<p className="text-lg md:text-xl md:text-justify">
-								I spend most of my time creating websites, apps, discord bots,
-								you name it, in order to improve my skills as a developer. I
-								gravitate towards building interfaces - I love finding ways to
-								make interactions as intuitive and accessible as possible while
-								maintaining a sleek and thematic style.
-							</p>
-						</div>
+						<p className="mb-6">
+							I spend most of my time creating websites, apps, discord bots, you
+							name it, in order to improve my skills as a developer. I gravitate
+							towards building interfaces - I love finding ways to make
+							interactions as intuitive and accessible as possible while
+							maintaining a sleek and thematic style.
+						</p>
 
-						<div className="text-white">
-							<p className="text-lg md:text-xl md:text-justify">
-								When I'm not working, I like to be in the sun and stay active by
-								playing volleyball or running. I always try to make time to
-								hangout with friends and family, and its rare that I'm not
-								smiling or laughing. I can't live without music, I love reading
-								science-fiction novels, and I'm a bit of a cinephile.
-							</p>
-						</div>
+						<p className="">
+							When I'm not working, I like to be in the sun and stay active by
+							playing volleyball or running. I always try to make time to
+							hangout with friends and family, and its rare that I'm not smiling
+							or laughing. I can't live without music, I love reading
+							science-fiction novels, and I'm a bit of a cinephile.
+						</p>
 					</div>
 				</div>
 
 				{/* Technology icons section */}
-				<div className="hidden lg:block lg:w-1/4 md:mt-48 md:px-20 md:ml-16">
+				<div className="hidden lg:block lg:w-1/5 xl:w-1/4 lg:mt-[15rem] 2xl:mt-[13rem] xl:px-20 lg:ml-8 2xl:ml-16">
 					<div className="grid grid-cols-2 gap-y-8">
 						{techIcons.map((tech, index) => (
 							<div
