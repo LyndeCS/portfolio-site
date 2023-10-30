@@ -43,8 +43,18 @@ const techIcons = [
 
 const About = () => {
 	return (
-		<section id="about" className="bg-smoke-500 pt-4 md:pt-24">
-			<div className="container mx-auto flex justify-start px-4 md:px-0">
+		<section id="about" className="bg-smoke-500 pt-4 md:pt-12">
+			{/* SECTION HEADING */}
+			<div className="mx-auto container px-4 md:px-8 xl:px-0">
+				<h2 className="text-lg md:text-2xl text-white mb-8 md:mb-16 italic">
+					<span className="">
+						<span className="text-meadow-500">&lt;</span>About{" "}
+						<span className="text-meadow-500">&#47;&gt;</span>
+					</span>
+				</h2>
+			</div>
+
+			<div className="container mx-auto flex justify-start px-4 md:px-8 xl:px-0">
 				{/* Left section with image and social links */}
 				<div className="w-1/4 h-min flex-shrink">
 					{/* Profile image */}
@@ -55,7 +65,7 @@ const About = () => {
 					/>
 
 					{/* Social media links */}
-					<div className="mt-8 flex flex-col space-y-4 text-sm">
+					<div className="mt-4 md:mt-8 flex flex-col space-y-2 md:space-y-4 text-sm">
 						<div className="flex items-center">
 							<FaGithub size={16} className="text-gray-500" />
 							<a
@@ -93,7 +103,7 @@ const About = () => {
 						</div>
 
 						{/* DIVIDER */}
-						<hr className="w-[90px] md:w-[190px] bg-gray-500 h-[1px] border-none opacity-50"></hr>
+						<hr className="w-[75px] xxs:w-[90px] md:w-[175px] lg:w-[190px] bg-gray-500 h-[1px] border-none opacity-50"></hr>
 
 						<div className="flex items-center">
 							<FaEnvelope size={16} className="text-gray-500" />
@@ -113,12 +123,12 @@ const About = () => {
 				{/* Middle section with paragraphs */}
 				<div className="flex-grow lg:w-3/5 xl:w-2/4 pl-4 md:pl-8 lg:pl-0">
 					{/* HEADING/SUBHEADING */}
-					<div className="flex flex-col h-full justify-around md:h-min text-2xl xs:text-3xl sm:text-4xl sm:pl-4 md:pl-0">
+					<div className="flex flex-col h-full md:h-min text-2xl xs:text-3xl sm:text-4xl sm:pl-4 md:pl-0 mt-[-6px]">
 						<h1 className="font-bold text-white mb-6">
-							My name is{" "}
+							My name is <br className="lg:hidden" />
 							<span className="text-meadow-500">Christopher Lynde</span>.
 						</h1>
-						<h1 className="font-bold text-white md:mb-12">
+						<h1 className="font-bold text-white md:mb-12 text-xl xxs:text-2xl xs:text-3xl sm:text-4xl">
 							I'm a full-stack developer with a passion for creating{" "}
 							<span className="underline italic decoration-meadow-500">
 								stylish and intuitive interfaces.
@@ -126,7 +136,7 @@ const About = () => {
 						</h1>
 					</div>
 
-					{/* DESKTOP PARAGRAPHS */}
+					{/* PARAGRAPHS (DESKTOP) */}
 					<div className="hidden md:block flex-grow text-lg lg:text-xl md:text-justify text-white">
 						<p className="mb-6">
 							I believe in respecting the user.{" "}
@@ -182,8 +192,8 @@ const About = () => {
 				</div>
 			</div>
 
-			{/* MOBILE PARAGRAPHS */}
-			<div className="container mx-auto block md:hidden px-4 py-4">
+			{/* PARAGRAPHS (MOBILE) */}
+			<div className="container mx-auto block md:hidden px-4 py-4 sm:py-8">
 				<div className="text-white mb-6">
 					<p className="text-lg lg:text-xl md:text-justify">
 						I believe in respecting the user.{" "}

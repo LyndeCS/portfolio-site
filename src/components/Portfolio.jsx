@@ -34,7 +34,7 @@ const Portfolio = () => {
 			id: 3,
 			title: "Streamwake - Discord bot",
 			description:
-				"Make watching shows with friends easy. Create a watchlist, suggest shows and vote for them to be added. Log viewer activity to automatically track episodes watched by each user.",
+				"Make watching shows with friends easy. Create a watchlist, suggest and vote for shows, and track episodes each user as watched.",
 			image: streamwakeImg,
 			tools: ["Node.js", "Discord.js", "MySQL"],
 			link: "https://github.com/LyndeCS/Streamwake",
@@ -43,19 +43,24 @@ const Portfolio = () => {
 	];
 
 	return (
-		<section id="portfolio" className="bg-smoke-500 py-20">
+		<section
+			id="portfolio"
+			className="bg-smoke-500 p-4 sm:px-8 md:pt-12 xl:py-20 lg:min-h-[80vh]"
+		>
 			<div className="container mx-auto">
-				<h2 className="text-2xl text-white mb-16 italic">
+				{/* SECTION HEADING */}
+				<h2 className="text-lg md:text-2xl text-white mb-8 md:mb-16 italic">
 					<span className="">
 						<span className="text-meadow-500">&lt;</span>Portfolio{" "}
 						<span className="text-meadow-500">&#47;&gt;</span>
 					</span>
 				</h2>
-				<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-24">
+
+				<div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-x-8 xl:gap-x-24 gap-y-12 md:gap-y-16">
 					{projects.map((item) => (
 						<div
 							key={item.id}
-							className="bg-smoke-500 shadow-sm border-t border-t-meadow-500 shadow-meadow-500 rounded-lg h-[30rem] flex flex-col p-2"
+							className="bg-smoke-500 shadow-sm border-t border-t-meadow-500 shadow-meadow-500 rounded-lg h-min lg:h-[30rem] flex flex-col p-2"
 						>
 							<a href={item.link} target="_blank" rel="noopener noreferrer">
 								<img
@@ -77,12 +82,9 @@ const Portfolio = () => {
 								<p className="text-white opacity-70 mb-auto">
 									{item.description}
 								</p>
-								<div className="flex flex-wrap">
+								<div className="flex flex-wrap mt-8 xl:mt-0">
 									{item.tools.map((tool, index) => (
-										<span
-											key={index}
-											className="text-md pr-4 flex items-center"
-										>
+										<span key={index} className="text-md flex items-center">
 											{/* Icon and technology name */}
 											{tool === "React" && (
 												<FaReact size={20} className="mr-1 text-[#60DAFA]" />
@@ -120,7 +122,15 @@ const Portfolio = () => {
 													className="mr-1 text-[#06AFEF]"
 												/>
 											)}
-											<span className="text-white opacity-70">{tool}</span>
+											<span
+												className={`text-white opacity-70 ${
+													["Tailwind", "MUI", "MySQL"].includes(tool)
+														? "pr-0"
+														: "pr-4"
+												}`}
+											>
+												{tool}
+											</span>
 										</span>
 									))}
 									<a

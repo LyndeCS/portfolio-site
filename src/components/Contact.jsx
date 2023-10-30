@@ -39,7 +39,7 @@ const Contact = () => {
 	return (
 		<section id="contact" className="bg-smoke-500 py-20">
 			<div className="container mx-auto">
-				<h2 className="text-2xl text-white italic mb-16">
+				<h2 className="text-lg md:text-2xl text-white mb-8 md:mb-16 italic">
 					<span className="">
 						<span className="text-meadow-500">&lt;</span>Contact{" "}
 						<span className="text-meadow-500">&#47;&gt;</span>

@@ -30,6 +30,7 @@ export default {
 				inner2: "inset 0 0 0 1px rgb(0 0 0 / 0.05)",
 			},
 			screens: {
+				xxs: "375px",
 				xs: "480px",
 			},
 		},
