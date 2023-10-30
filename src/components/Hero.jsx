@@ -17,7 +17,7 @@ const Hero = () => {
 						I'm a web developer
 						<br /> from London, Ontario.
 					</h3>
-					<p className="text-md xs:text-lg sm:text-2xl mb-8 xl:mb-10 text-white opacity-50 px-4 xl:px-0">
+					<p className="text-md xs:text-lg sm:text-2xl mb-8 md:mb-12 xl:mb-10 text-white opacity-50 px-4 xl:px-0">
 						I'm passionate about creating stylish and intuitive solutions.
 					</p>
 					<a

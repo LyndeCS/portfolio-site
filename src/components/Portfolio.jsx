@@ -82,7 +82,7 @@ const Portfolio = () => {
 								<p className="text-white opacity-70 mb-auto">
 									{item.description}
 								</p>
-								<div className="flex flex-wrap mt-8 xl:mt-0">
+								<div className="flex flex-wrap mt-8 xl:mt-0 gap-x-2 xs:gap-x-4">
 									{item.tools.map((tool, index) => (
 										<span key={index} className="text-md flex items-center">
 											{/* Icon and technology name */}
@@ -122,13 +122,7 @@ const Portfolio = () => {
 													className="mr-1 text-[#06AFEF]"
 												/>
 											)}
-											<span
-												className={`text-white opacity-70 ${
-													["Tailwind", "MUI", "MySQL"].includes(tool)
-														? "pr-0"
-														: "pr-4"
-												}`}
-											>
+											<span className="text-white opacity-70 hidden xs:block">
 												{tool}
 											</span>
 										</span>
