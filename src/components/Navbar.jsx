@@ -4,30 +4,30 @@ import { FiMail } from "react-icons/fi";
 
 const Navbar = () => {
 	return (
-		<nav className="bg-smoke-500 py-4 md:py-8 z-10 relative">
-			<div className="container mx-auto flex md:justify-between flex-col md:flex-row space-y-6 md:space-y-0 items-center md:px-8 xl:px-0">
+		<nav className="bg-smoke-500 py-8 z-10 relative">
+			<div className="container mx-auto flex md:justify-between flex-col md:flex-row md:space-y-0 items-center md:px-8 xl:px-0">
 				{/* NAV LOGO */}
-				<div className="md:block text-white text-xl">
+				<div className="hidden md:block text-white text-xl">
 					<span className="text-meadow-500">&lt;</span>Christopher Lynde{" "}
 					<span className="text-meadow-500">&#47;&gt;</span>
 				</div>
 
 				{/* NAV LINKS */}
-				<div className="flex-grow md:flex-none sm:space-x-8 lg:space-x-20 xl:space-x-40 flex justify-around w-full md:w-fit sm:px-12 decoration-meadow-500 decoration-1 underline underline-offset-1 md:no-underline">
+				<div className="flex-grow md:flex-none sm:space-x-8 lg:space-x-20 xl:space-x-40 flex justify-around w-full md:w-fit sm:px-12">
 					<a
-						className="text-white hover:text-meadow-500 text-xl transition duration-300 ease-in-out"
+						className="text-white hover:text-meadow-500 text-lg sm:text-xl transition duration-300 ease-in-out"
 						href="#about"
 					>
 						About
 					</a>
 					<a
-						className="text-white hover:text-meadow-500 text-xl transition duration-300 ease-in-out"
+						className="text-white hover:text-meadow-500 text-lg sm:text-xl transition duration-300 ease-in-out"
 						href="#portfolio"
 					>
 						Portfolio
 					</a>
 					<a
-						className="text-white hover:text-meadow-500 text-xl transition duration-300 ease-in-out"
+						className="text-white hover:text-meadow-500 text-lg sm:text-xl transition duration-300 ease-in-out"
 						href="#contact"
 					>
 						Contact

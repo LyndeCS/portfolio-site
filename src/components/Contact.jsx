@@ -47,7 +47,7 @@ const Contact = () => {
 					</span>
 				</h2>
 				{/* HEADER */}
-				<h1 className="text-xl sm:text-2xl lg:text-4xl text-white text-center mb-16 lg:mb-24 font-bold mx-auto">
+				<h1 className="text-xl sm:text-2xl lg:text-4xl text-white text-center mb-12 lg:mb-24 font-bold mx-auto">
 					Feel free to reach out regarding job opportunities, project ideas, or
 					anything else.
 				</h1>
