@@ -34,7 +34,7 @@ const Portfolio = () => {
 			id: 3,
 			title: "Streamwake - Discord bot",
 			description:
-				"Make watching shows with friends easy. Create a watchlist, suggest and vote for shows, and track episodes each user as watched.",
+				"Make watching shows with friends easy. Create a watchlist, suggest and vote for shows, and track episodes each user has watched.",
 			image: streamwakeImg,
 			tools: ["Node.js", "Discord.js", "MySQL"],
 			link: "https://github.com/LyndeCS/Streamwake",
@@ -45,7 +45,7 @@ const Portfolio = () => {
 	return (
 		<section
 			id="portfolio"
-			className="bg-smoke-500 p-4 sm:px-8 md:pt-12 xl:py-20 lg:min-h-[80vh]"
+			className="bg-smoke-500 p-4 sm:px-8 md:pt-12 xl:py-20 lg:min-h-[80vh] min-[2000px]:min-h-[50vh]"
 		>
 			<div className="container mx-auto">
 				{/* SECTION HEADING */}
