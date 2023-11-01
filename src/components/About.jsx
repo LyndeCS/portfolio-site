@@ -139,32 +139,57 @@ const About = () => {
 					{/* PARAGRAPHS (DESKTOP) */}
 					<div className="hidden md:block flex-grow text-lg lg:text-xl md:text-justify text-white">
 						<p className="mb-6">
-							I believe in respecting the user.{" "}
-							<span className="italic decoration-meadow-500 bg-shark-300">
-								Fewer clicks, faster results.
-							</span>{" "}
-							In order to deliver on this principle, I'm driven to discover all
-							that is possible of the tools at my disposal. As a result, and in
-							addition to being naturally curious, I am excited to engage with
-							new technologies and take every opportunity to synthesize new
-							knowledge in order to build the best product imaginable.
+							I graduated from Fanshawe College, where I learned the
+							fundamentals of web development. Since then, I’ve been dedicated
+							to expanding my knowledge, taking on diverse projects and
+							exploring new tools to improve and innovate. I find joy in
+							learning and embrace new challenges with enthusiasm, seeing them
+							as an opportunity to advance my expertise even further.
 						</p>
 
-						<p className="mb-6">
-							I graduated from the Web Development program at Fanshawe College
-							in 2021, where I learned the foundations of HTML5, CSS3,
-							JavaScript (ES6), LAMP (Linux, Apache, MySQL, PHP), and CMS
-							(WordPress). Since then, I've added React (up to v18), TypeScript,
-							Firebase DB (NoSQL), and Node to my repertoire, as well as
-							Bootstrap, MUI, and Tailwind for styling.
+						<p className="mb-6 ">
+							<span className="italic bg-shark-300">
+								Here are some technologies I'm comfortable working with:
+							</span>
 						</p>
 
+						<div class="space-y-2 mb-6">
+							<div class="flex">
+								<div class="w-1/5 font-bold underline">Front-End:</div>
+								<div class="flex-1">
+									React, JavaScript (ES6+), TypeScript, HTML5, CSS3
+								</div>
+							</div>
+							<div class="flex">
+								<div class="w-1/5 font-bold underline">Back-End:</div>
+								<div class="flex-1">
+									Node, LAMP stack (Linux, Apache, MySQL, PHP)
+								</div>
+							</div>
+							<div class="flex">
+								<div class="w-1/5 font-bold underline">Databases:</div>
+								<div class="flex-1">
+									MySQL, Microsoft SQL Server, Postgres, Firebase, MongoDB
+								</div>
+							</div>
+							<div class="flex">
+								<div class="w-1/5 font-bold underline">Styling:</div>
+								<div class="flex-1">Tailwind, MUI, Bootstrap</div>
+							</div>
+							<div class="flex">
+								<div class="w-1/5 font-bold underline">CMS:</div>
+								<div class="flex-1">WordPress</div>
+							</div>
+							<div class="flex">
+								<div class="w-1/5 font-bold underline">Scripting:</div>
+								<div class="flex-1">Python</div>
+							</div>
+						</div>
+
 						<p className="mb-6">
-							I spend most of my time creating websites, apps, discord bots, you
-							name it, in order to improve my skills as a developer. I gravitate
-							towards building interfaces - I love finding ways to make
-							interactions as intuitive and accessible as possible while
-							maintaining a sleek and thematic style.
+							Solving problems captivates me. Driven by curiosity and optimism,
+							no challenge seems insurmountable. When there's a demand, my focus
+							sharpens, and my resolve to find a solution is unshakable.
 						</p>
 
 						<p className="">
@@ -196,36 +221,59 @@ const About = () => {
 			<div className="container mx-auto block md:hidden px-4 py-4 sm:py-8">
 				<div className="text-white mb-6">
 					<p className="text-lg lg:text-xl md:text-justify">
-						I believe in respecting the user.{" "}
-						<span className="italic decoration-meadow-500 bg-shark-300">
-							Fewer clicks, faster results.
-						</span>{" "}
-						In order to deliver on this principle, I'm driven to discover all
-						that is possible of the tools at my disposal. As a result, and in
-						addition to being naturally curious, I am excited to engage with new
-						technologies and take every opportunity to synthesize new knowledge
-						in order to build the best product imaginable.
+						I graduated from Fanshawe College, where I learned the fundamentals
+						of web development. Since then, I’ve been dedicated to expanding my
+						knowledge, taking on diverse projects and exploring new tools to
+						improve and innovate. I find joy in learning and embrace new
+						challenges with enthusiasm, seeing them as an opportunity to advance
+						my expertise even further.
 					</p>
+				</div>
+
+				<p className="mb-6 text-white">
+					<span className="italic bg-shark-300">
+						Here are some technologies I'm comfortable working with:
+					</span>
+				</p>
+
+				<div class="space-y-2 mb-6 text-white">
+					<div class="flex">
+						<div class="w-1/5 font-bold underline">Front-End:</div>
+						<div class="flex-1">
+							React, JavaScript (ES6+), TypeScript, HTML5, CSS3
+						</div>
+					</div>
+					<div class="flex">
+						<div class="w-1/5 font-bold underline">Back-End:</div>
+						<div class="flex-1">
+							Node, LAMP stack (Linux, Apache, MySQL, PHP)
+						</div>
+					</div>
+					<div class="flex">
+						<div class="w-1/5 font-bold underline">Databases:</div>
+						<div class="flex-1">
+							MySQL, Microsoft SQL Server, Postgres, Firebase, MongoDB
+						</div>
+					</div>
+					<div class="flex">
+						<div class="w-1/5 font-bold underline">Styling:</div>
+						<div class="flex-1">Tailwind, MUI, Bootstrap</div>
+					</div>
+					<div class="flex">
+						<div class="w-1/5 font-bold underline">CMS:</div>
+						<div class="flex-1">WordPress</div>
+					</div>
+					<div class="flex">
+						<div class="w-1/5 font-bold underline">Scripting:</div>
+						<div class="flex-1">Python</div>
+					</div>
 				</div>
 
 				<div className="text-white mb-6">
 					<p className="text-lg md:text-xl md:text-justify">
-						I graduated from the Web Development program at Fanshawe College in
-						2021, where I learned the foundations of HTML5, CSS3, JavaScript
-						(ES6), LAMP (Linux, Apache, MySQL, PHP), and CMS (WordPress). Since
-						then, I've added React (up to v18), TypeScript, Firebase DB (NoSQL),
-						and Node to my repertoire, as well as Bootstrap, MUI, and Tailwind
-						for styling.
-					</p>
-				</div>
-
-				<div className="text-white mb-6">
-					<p className="text-lg md:text-xl md:text-justify">
-						I spend most of my time creating websites, apps, discord bots, you
-						name it, in order to improve my skills as a developer. I gravitate
-						towards building interfaces - I love finding ways to make
-						interactions as intuitive and accessible as possible while
-						maintaining a sleek and thematic style.
+						Solving problems captivates me. Driven by curiosity and optimism, no
+						challenge seems insurmountable. When there's a demand, my focus
+						sharpens, and my resolve to find a solution is unshakable.
 					</p>
 				</div>
 
