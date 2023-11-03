@@ -125,7 +125,7 @@ const About = () => {
 					{/* HEADING/SUBHEADING */}
 					<div className="flex flex-col h-full md:h-min text-2xl xs:text-3xl sm:text-4xl sm:pl-4 md:pl-0 mt-[-6px]">
 						<h1 className="font-bold text-white mb-6">
-							My name is <br className="lg:hidden" />
+							Hi, my name is <br className="lg:hidden" />
 							<span className="text-meadow-500">Christopher Lynde</span>.
 						</h1>
 						<h1 className="font-bold text-white md:mb-12 text-xl xxs:text-2xl xs:text-3xl sm:text-4xl">
@@ -140,11 +140,12 @@ const About = () => {
 					<div className="hidden md:block flex-grow text-lg lg:text-xl md:text-justify text-white">
 						<p className="mb-6">
 							I graduated from Fanshawe College, where I learned the
-							fundamentals of web development. Since then, I’ve been dedicated
-							to expanding my knowledge, taking on diverse projects and
-							exploring new tools to improve and innovate. I find joy in
-							learning and embrace new challenges with enthusiasm, seeing them
-							as an opportunity to advance my expertise even further.
+							fundamentals of web development. Since then, I’ve been committed
+							to taking on diverse projects and exploring new tools to broaden
+							my understanding of the technical landscape. My approach to work
+							is defined by curiosity and determination; I'm excited by
+							challenges, and problem-solving brings a deep sense of
+							accomplishment.
 						</p>
 
 						<p className="mb-6 ">
