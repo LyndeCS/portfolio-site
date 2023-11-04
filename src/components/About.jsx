@@ -188,17 +188,36 @@ const About = () => {
 						</div>
 
 						<p className="mb-6">
-							Solving problems captivates me. Driven by curiosity and optimism,
-							no challenge seems insurmountable. When there's a demand, my focus
-							sharpens, and my resolve to find a solution is unshakable.
+							The notion that my efforts can streamline daily routines and
+							enrich lives is a source of constant motivation for me. I designed{" "}
+							<a
+								href="https://ajenda.web.app/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hover:underline text-meadow-500"
+							>
+								Ajenda
+							</a>{" "}
+							to harness the strengths of both to-do lists and schedulers,
+							offering an optimized task management solution. Meanwhile,{" "}
+							<a
+								href="https://github.com/LyndeCS/Streamwake"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hover:underline text-meadow-500"
+							>
+								Streamwake
+							</a>{" "}
+							is being developed as a Discord bot tailored to enhance group
+							viewing, making online movie nights a breeze.
 						</p>
 
 						<p className="">
-							When I'm not working, I like to be in the sun and stay active by
-							playing volleyball or running. I always try to make time to
-							hangout with friends and family, and its rare that I'm not smiling
-							or laughing. I can't live without music, I love reading
-							science-fiction novels, and I'm a bit of a cinephile.
+							When I step away from the screen, you can find me basking in the
+							sun, playing volleyball, or going for a run. Music is as much a
+							staple throughout my day as sci-fi novels are at night, and
+							there's nothing I value more than sharing laughter with family and
+							friends.
 						</p>
 					</div>
 				</div>
@@ -272,19 +291,37 @@ const About = () => {
 
 				<div className="text-white mb-6">
 					<p className="text-lg md:text-xl md:text-justify">
-						Solving problems captivates me. Driven by curiosity and optimism, no
-						challenge seems insurmountable. When there's a demand, my focus
-						sharpens, and my resolve to find a solution is unshakable.
+						The notion that my efforts can streamline daily routines and enrich
+						lives is a source of constant motivation for me. I designed{" "}
+						<a
+							href="https://ajenda.web.app/"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:underline text-meadow-500"
+						>
+							Ajenda
+						</a>{" "}
+						to harness the strengths of both to-do lists and schedulers,
+						offering an optimized task management solution. Meanwhile,{" "}
+						<a
+							href="https://github.com/LyndeCS/Streamwake"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:underline text-meadow-500"
+						>
+							Streamwake
+						</a>{" "}
+						is being developed as a Discord bot tailored to enhance group
+						viewing, making online movie nights a breeze.
 					</p>
 				</div>
 
 				<div className="text-white">
 					<p className="text-lg md:text-xl md:text-justify">
-						When I'm not working, I like to be in the sun and stay active by
-						playing volleyball or running. I always try to make time to hangout
-						with friends and family, and its rare that I'm not smiling or
-						laughing. I can't live without music, I love reading science-fiction
-						novels, and I'm a bit of a cinephile.
+						When I step away from the screen, you can find me basking in the
+						sun, playing volleyball, or going for a run. Music is as much a
+						staple throughout my day as sci-fi novels are at night, and there's
+						nothing I value more than sharing laughter with family and friends.
 					</p>
 				</div>
 			</div>
