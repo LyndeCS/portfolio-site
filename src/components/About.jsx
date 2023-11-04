@@ -258,33 +258,33 @@ const About = () => {
 
 				<div class="space-y-2 mb-6 text-white">
 					<div class="flex">
-						<div class="w-1/5 font-bold underline">Front-End:</div>
+						<div class="w-1/3 xs:w-1/5 font-bold underline">Front-End:</div>
 						<div class="flex-1">
 							React, JavaScript (ES6+), TypeScript, HTML5, CSS3
 						</div>
 					</div>
 					<div class="flex">
-						<div class="w-1/5 font-bold underline">Back-End:</div>
+						<div class="w-1/3 xs:w-1/5 font-bold underline">Back-End:</div>
 						<div class="flex-1">
 							Node, LAMP stack (Linux, Apache, MySQL, PHP)
 						</div>
 					</div>
 					<div class="flex">
-						<div class="w-1/5 font-bold underline">Databases:</div>
+						<div class="w-1/3 xs:w-1/5 font-bold underline">Databases:</div>
 						<div class="flex-1">
 							MySQL, Microsoft SQL Server, Postgres, Firebase, MongoDB
 						</div>
 					</div>
 					<div class="flex">
-						<div class="w-1/5 font-bold underline">Styling:</div>
+						<div class="w-1/3 xs:w-1/5 font-bold underline">Styling:</div>
 						<div class="flex-1">Tailwind, MUI, Bootstrap</div>
 					</div>
 					<div class="flex">
-						<div class="w-1/5 font-bold underline">CMS:</div>
+						<div class="w-1/3 xs:w-1/5 font-bold underline">CMS:</div>
 						<div class="flex-1">WordPress</div>
 					</div>
 					<div class="flex">
-						<div class="w-1/5 font-bold underline">Scripting:</div>
+						<div class="w-1/3 xs:w-1/5 font-bold underline">Scripting:</div>
 						<div class="flex-1">Python</div>
 					</div>
 				</div>
