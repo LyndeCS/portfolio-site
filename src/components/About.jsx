@@ -186,39 +186,6 @@ const About = () => {
 								<div class="flex-1">Python</div>
 							</div>
 						</div>
-
-						<p className="mb-6">
-							The notion that my efforts can streamline daily routines and
-							enrich lives is a source of constant motivation for me. I designed{" "}
-							<a
-								href="https://ajenda.web.app/"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="hover:underline text-meadow-500"
-							>
-								Ajenda
-							</a>{" "}
-							to harness the strengths of both to-do lists and schedulers,
-							offering an optimized task management solution. Meanwhile,{" "}
-							<a
-								href="https://github.com/LyndeCS/Streamwake"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="hover:underline text-meadow-500"
-							>
-								Streamwake
-							</a>{" "}
-							is being developed as a Discord bot tailored to enhance group
-							viewing, making online movie nights a breeze.
-						</p>
-
-						<p className="">
-							When I step away from the screen, you can find me basking in the
-							sun, playing volleyball, or going for a run. Music is as much a
-							staple throughout my day as sci-fi novels are at night, and
-							there's nothing I value more than sharing laughter with family and
-							friends.
-						</p>
 					</div>
 				</div>
 
@@ -287,42 +254,6 @@ const About = () => {
 						<div class="w-1/3 xs:w-1/5 font-bold underline">Scripting:</div>
 						<div class="flex-1">Python</div>
 					</div>
-				</div>
-
-				<div className="text-white mb-6">
-					<p className="text-lg md:text-xl md:text-justify">
-						The notion that my efforts can streamline daily routines and enrich
-						lives is a source of constant motivation for me. I designed{" "}
-						<a
-							href="https://ajenda.web.app/"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="hover:underline text-meadow-500"
-						>
-							Ajenda
-						</a>{" "}
-						to harness the strengths of both to-do lists and schedulers,
-						offering an optimized task management solution. Meanwhile,{" "}
-						<a
-							href="https://github.com/LyndeCS/Streamwake"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="hover:underline text-meadow-500"
-						>
-							Streamwake
-						</a>{" "}
-						is being developed as a Discord bot tailored to enhance group
-						viewing, making online movie nights a breeze.
-					</p>
-				</div>
-
-				<div className="text-white">
-					<p className="text-lg md:text-xl md:text-justify">
-						When I step away from the screen, you can find me basking in the
-						sun, playing volleyball, or going for a run. Music is as much a
-						staple throughout my day as sci-fi novels are at night, and there's
-						nothing I value more than sharing laughter with family and friends.
-					</p>
 				</div>
 			</div>
 		</section>
