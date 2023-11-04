@@ -1,20 +1,16 @@
 import React, { useRef } from "react";
 import {
-	FaPhone,
 	FaEnvelope,
 	FaMapMarker,
 	FaTwitter,
 	FaLinkedin,
 	FaGithub,
 } from "react-icons/fa";
-const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
-// const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
 import emailjs from "emailjs-com";
 
 const Contact = () => {
 	const formRef = useRef();
-	emailjs.init(PUBLIC_KEY);
+	emailjs.init("6J4-IxS7Vyx3iqJxm");
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -25,15 +21,22 @@ const Contact = () => {
 		// 	from_message: e.target.message.value,
 		// };
 
-		emailjs.sendForm("default_service", TEMPLATE_ID, e.target, PUBLIC_KEY).then(
-			(result) => {
-				alert("Email sent successfully.");
-				formRef.current.reset();
-			},
-			(error) => {
-				alert("Email failed to send.");
-			}
-		);
+		emailjs
+			.sendForm(
+				"default_service",
+				"template_izdc39a",
+				e.target,
+				"6J4-IxS7Vyx3iqJxm"
+			)
+			.then(
+				(result) => {
+					alert("Email sent successfully.");
+					formRef.current.reset();
+				},
+				(error) => {
+					alert("Email failed to send.");
+				}
+			);
 	};
 
 	return (
