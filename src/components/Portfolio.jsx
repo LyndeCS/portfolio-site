@@ -56,7 +56,7 @@ const Portfolio = () => {
 					</span>
 				</h2>
 
-				<div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-x-8 xl:gap-x-24 gap-y-12 md:gap-y-16">
+				<div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-x-8 2xl:gap-x-24 gap-y-12 md:gap-y-16">
 					{projects.map((item) => (
 						<div
 							key={item.id}
@@ -122,7 +122,7 @@ const Portfolio = () => {
 													className="mr-1 text-[#06AFEF]"
 												/>
 											)}
-											<span className="text-white opacity-70 hidden xs:block">
+											<span className="text-white opacity-70 hidden xs:block lg:hidden min-[1350px]:block">
 												{tool}
 											</span>
 										</span>
