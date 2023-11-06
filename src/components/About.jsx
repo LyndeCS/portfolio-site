@@ -22,7 +22,7 @@ import {
 	SiTailwindcss,
 	SiJavascript,
 } from "react-icons/si";
-import headshot from "../assets/stock_selfie.png";
+import headshot from "../assets/me.png";
 
 const techIcons = [
 	{ icon: <FaReact />, text: "React" },
@@ -61,7 +61,7 @@ const About = () => {
 					<img
 						src={headshot}
 						alt="Your Name"
-						className="rounded w-24 md:w-48 h-32 md:h-64 object-cover scale-x-[-1]"
+						className="rounded w-24 md:w-48 h-32 md:h-64 object-cover object-top"
 					/>
 
 					{/* Social media links */}
