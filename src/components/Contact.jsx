@@ -40,8 +40,8 @@ const Contact = () => {
 	};
 
 	return (
-		<section id="contact" className="bg-smoke-500 pt-4 md:pt-12 pb-12 md:pb-20">
-			<div className="container mx-auto px-4 md:px-8 xl:px-0">
+		<section id="contact" className="bg-smoke-500 pt-4 md:pt-12 pb-12 md:pb-20 px-8">
+			<div className="container mx-auto">
 				{/* SECTION HEADER */}
 				<h2 className="text-lg md:text-2xl text-white mb-8 md:mb-16 italic">
 					<span className="">

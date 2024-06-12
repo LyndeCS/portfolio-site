@@ -43,9 +43,9 @@ const techIcons = [
 
 const About = () => {
 	return (
-		<section id="about" className="bg-smoke-500 pt-4 md:pt-12">
+		<section id="about" className="bg-smoke-500 pt-4 md:pt-12 px-8">
 			{/* SECTION HEADING */}
-			<div className="mx-auto container px-4 md:px-8 xl:px-0">
+			<div className="mx-auto container">
 				<h2 className="text-lg md:text-2xl text-white mb-8 md:mb-16 italic">
 					<span className="">
 						<span className="text-meadow-500">&lt;</span>About{" "}
@@ -54,7 +54,7 @@ const About = () => {
 				</h2>
 			</div>
 
-			<div className="container mx-auto flex justify-start px-4 md:px-8 xl:px-0">
+			<div className="container mx-auto flex justify-start">
 				{/* Left section with image and social links */}
 				<div className="w-1/4 h-min flex-shrink">
 					{/* Profile image */}

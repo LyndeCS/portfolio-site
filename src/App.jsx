@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
 	return (
-		<div>
+		<>
 			<Navbar />
 			<Hero />
 			<DividerSVG />
@@ -20,7 +20,7 @@ function App() {
 			<DividerPeaksSVG />
 			<Contact />
 			<Footer />
-		</div>
+		</>
 	);
 }
 
